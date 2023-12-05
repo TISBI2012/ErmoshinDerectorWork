@@ -1,0 +1,32 @@
+﻿<Window x:Class="KinoProgram.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KinoProgram"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="53*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="296*"/>
+            <RowDefinition Height="55*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0">
+            <TextBlock Text="Меню" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+        </StackPanel>
+        <StackPanel Grid.Row="0" Grid.Column="1">
+            <TextBlock Text="KinoPoisk" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Button x:Name="BtnFilm" Content="Фильм" Margin="10,5,10,0" Click="BtnFilm_Click"/>
+            <Button x:Name="BtnKino" Content="Кино"  Margin="10,5,10,0" Click="BtnKino_Click"/>
+            <Button x:Name="BtnAuth" Content="Авторизация" Margin="10,5,10,0" Click="BtnAuth_Click"/>
+        </StackPanel>
+        <Frame Name="MyFrame" Grid.Column="1" Grid.Row="1" />
+    </Grid>
+</Window>
